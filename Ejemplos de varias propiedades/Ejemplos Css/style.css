@@ -1,0 +1,41 @@
+.titulo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px;
+    background-color: 	#004d24;
+    color: white;
+    text-align: center;
+
+}
+
+.contenedorEjemplo {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.ejemplo {
+    border: black 1px solid;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 0px solid black;
+
+    padding: 10px;
+    background-color: rgba(46, 100, 216, 0.158);
+}
+
+.tituloEjemplo {
+    grid-column: 1 / span 2;
+    box-shadow: 0px 5px 15px 0px black;
+    padding: 15px;
+}
+
+.descPre{
+    /* padding: 0px !important; */
+    margin: 0px !important;
+    border-radius: 10px 10px 0px 0px !important;
+    border-bottom: 0px solid black !important;
+
+}

@@ -1,0 +1,224 @@
+<!-- En este documento te encontrarás ejemplos de algunas de las propiedades más utilizadas en css -->
+<!-- A la hora de leer los ejemplos tendras un primer bloque donde podrás ver el codigo html del ejemplo, se encontrará rodeado de un comentario Ejemplo, 
+ y otro bloque usado para explicar rodeado del comentario Explicación -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prismLib/prism.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="propiedadesBasicas.css">
+</head>
+
+<body>
+
+
+    <div class="titulo">Ejemplos básicos de propiedades css</div>
+
+    <!-- COLOR -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="colorRgb">Color rojo usando rgb</div>
+            <div id="colorHex">Color azul usando hex</div>
+            <div id="colorSeguro">Color verde usando colores seguros de monitor</div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                <code class="language-css">
+                    #colorRgb{
+                        color: rgb(255, 0, 0);
+                    }
+                    #colorHex{
+                        color: #00F; /*Reducido*/
+                        color: #0000FF; /*Completo*/
+                    }
+                    #colorSeguro{
+                        color: green
+                    }
+                </code>
+            </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>color:</strong> Establece el color del texto de un contenedor</div>
+
+    </div>
+    <!-- FIN COLOR -->
+
+    <!-- COLORBACKGROUND -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="colorRgbBack">BackgroundColor rojo usando rgb</div>
+            <div id="colorHexBack">BackgroundColor azul usando hex</div>
+            <div id="colorSeguroBack">BackgroundColor verde usando colores seguros de monitor</div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                <code class="language-css">
+                    #colorRgbBack{
+                        background-color: rgb(255, 0, 0);
+                    }
+                    #colorHexBack{
+                        background-color: #00F; /*Reducido*/
+                        background-color: #0000FF; /*Completo*/
+                    }
+                    #colorSeguroBack{
+                        background-color: green
+                    }
+                </code>
+            </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>background-color:</strong> Establece el color del texto de un contenedor
+        </div>
+
+    </div>
+    <!-- FIN COLOR BACKGROUND -->
+
+    <!-- FONT -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo" id="ejemploText">
+            <div id="fontFamily">Este texto modifica la family</div>
+            <div id="fontWeightBold">Texto Bold</div>
+            <div id="fontWeightBolder">Texto Bolder</div>
+            <div id="fontWeightLight">Texto Light</div>
+            <div id="fontWeightNormal">Texto Normal</div>
+            <div id="fontSizePx">Tamaño en pixeles</div>
+            <div id="fontSizeRem">Tamaño en REM 1.25rem</div>
+            <div id="fontSizeEm">Tamaño en EM 1.25em</div>
+            <div id="fontSizePt">Tamaño en PT</div>
+            <div id="fontAll">Short para modificar toda la fuente a la vez</div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                <code class="language-css">
+                    #fontFamily{
+                        font-family: Georgia, serif;
+                    }
+                    
+                    #fontWeightBold{
+                        font-weight: bold;
+                    }
+                    #fontWeightBolder{
+                        font-weight: bolder;
+                    }
+                    #fontWeightLight{
+                        font-weight: lighter;
+                    }
+                    #fontWeightNormal{
+                        font-weight: normal;
+                    }
+                    
+                    #fontSizePx{
+                        font-size: 16px; 
+                    }
+                    #fontSizeRem{
+                        font-size: 1rem; /* Escala en función del font-size del elemento root */
+                    }
+                    #fontSizeEm{
+                        font-size: 1em; /* Escala en función del font-size del elemento padre*/
+                    }
+                    #fontSizePt{
+                        font-size: 10pt;
+                    }
+                    
+                    #fontAll{
+                        font: 16px Arial bold;
+                    }
+                    
+                </code>
+            </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>Propiedades texto:</strong> Existen muchos modificadores para el texto, cada uno puede modificar una de las propiedades del texto individualmente o hacerlo a la vez usando la propiedad font.        </div>
+
+    </div>
+    <!-- FIN FONT -->
+
+    <!-- BORDER -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo" id="borderEjemplo">
+            <div id="border">Un borde</div>
+            <div id="borderRadius">Borde con las esquinas redondeadas</div>
+            <div id="slashBorder">Borde con líneas discontinuas</div>
+            <div id="shadowBox">Crea un sombreado solido debajo del elemento</div>
+            <div id="shadowBoxBlur">Crea un sombreado con blur debajo del elemento</div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                <code class="language-css">
+
+                    #border{
+                        border: 1px solid black;
+                    }
+                    #borderRadius{
+                        border: 1px solid black;
+                        border-radius: 5px;
+                    }
+                    #slashBorder{
+                        border: 1px dotted black;
+                    }
+                    #shadowBox{
+                        box-shadow: 5px 5px red; /* <desplazamiento abajo> <desplazamiento derecha> <color>*/
+                    }
+                    #shadowBoxBlur{
+                        box-shadow: 5px 5px 16px 0px green; /* <desplazamiento abajo> <desplazamiento derecha> <blur> <spread> <color>*/
+                    }
+                    
+                    
+                </code>
+            </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>border:</strong> Sirve para crear un borde al elemento. Aunque box shadow no es exactamente un borde, me parece que cuadra en esta sección</div>
+
+    </div>
+    <!-- FIN BORDER -->
+
+    <!-- Margin y padding -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo" id="marginEjemplo">
+            <div id="margin">Margin es el espacio entre un elemento y el siguiente</div>
+            <div id="padding">Padding es el espacio entre el contenido de un elemento y su borde</div>
+            <div id="marginTop">Se puede aplicar un -top a ambos para indicar si el margin o el padding es superior, inferior, etc</div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                <code class="language-css">
+                    #margin{
+                        margin: 10px; /*Espacio entre un elemento y el siguiente*/
+                    }
+                    
+                    #padding{
+                        padding: 10px; /*Espacio entre el borde de un elemento y su contenido*/
+                    }
+                    
+                    #marginTop{
+                        margin-top: 10px; /*Se puede aplicar en margin y padding en las 4 direcciones*/
+                    }
+                    
+                    
+                </code>
+            </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>Margin y padding:</strong> Son usados para crear espacio entre elementos</div>
+
+    </div>
+    <!-- FIN MARGIN Y PADDING -->
+
+
+
+
+    <script src="prismLib/prism.js"></script>
+</body>
+
+</html>

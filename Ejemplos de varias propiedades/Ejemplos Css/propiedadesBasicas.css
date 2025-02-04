@@ -1,0 +1,117 @@
+:root{
+    font-size: 16px;
+}
+
+
+/* Otras propiedades necesarias para mostrar los ejemplos */
+
+#borderEjemplo div{
+    height: 20px;
+    margin-top: 10px;
+}
+
+#marginEjemplo div{
+    height: 20px;
+    border: 1px solid black;
+    background-color: green;
+}
+
+/* Color */
+#colorRgb{
+    color: rgb(255, 0, 0);
+}
+#colorHex{
+    color: #00F; /*Reducido*/
+    color: #0000FF; /*Completo*/
+}
+#colorSeguro{
+    color: green
+}
+
+/* Color background */
+#colorRgbBack{
+    background-color: rgb(255, 0, 0);
+}
+#colorHexBack{
+    background-color: #00F; /*Reducido*/
+    background-color: #0000FF; /*Completo*/
+}
+#colorSeguroBack{
+    background-color: green
+}
+
+/* Font Style */
+
+#ejemploText{
+    font-size: 20px;
+}
+#fontFamily{
+    font-family: Georgia, serif;
+}
+
+#fontWeightBold{
+    font-weight: bold;
+}
+#fontWeightBolder{
+    font-weight: bolder;
+}
+#fontWeightLight{
+    font-weight: lighter;
+}
+#fontWeightNormal{
+    font-weight: normal;
+}
+
+#fontSizePx{
+    font-size: 16px; 
+}
+#fontSizeRem{
+    font-size: 1.25rem; /* Escala en función del font-size del elemento root */
+}
+#fontSizeEm{
+    font-size: 1.25em; /* Escala en función del font-size del elemento padre*/
+}
+#fontSizePt{
+    font-size: 10pt;
+}
+
+#fontAll{
+    font: 16px Arial bold;
+}
+
+/* Border */
+
+#border{
+    border: 1px solid black;
+}
+#borderRadius{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#slashBorder{
+    border: 1px dotted black;
+}
+#shadowBox{
+    box-shadow: 5px 5px red; /* <desplazamiento abajo> <desplazamiento derecha> <color>*/
+}
+#shadowBoxBlur{
+    box-shadow: 5px 5px 16px 0px green; /* <desplazamiento abajo> <desplazamiento derecha> <blur> <spread> <color>*/
+}
+
+/* Fin Border */
+
+/* Margin y Pading */
+
+#margin{
+    margin: 20px; /*Espacio entre un elemento y el siguiente*/
+}
+
+#padding{
+    padding: 10px; /*Espacio entre el borde de un elemento y su contenido*/
+}
+
+#marginTop{
+    margin-top: 20px; /*Se puede aplicar en margin y padding en las 4 direcciones*/
+}
+
+/* Fin Margin y Pading */
