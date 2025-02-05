@@ -1,0 +1,164 @@
+<!-- En este documento te encontrarás ejemplos de algunas de las propiedades más utilizadas en css -->
+<!-- A la hora de leer los ejemplos tendras un primer bloque donde podrás ver el codigo html del ejemplo, se encontrará rodeado de un comentario Ejemplo, 
+ y otro bloque usado para explicar rodeado del comentario Explicación -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../prismLib/prism.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="PosicionamientoCss.css">
+</head>
+
+<body>
+
+
+    <div class="titulo">Ejemplos básicos de Posicionamiento usando Css</div>
+
+    <!-- Centrar un elemento dentro de un contenedor  -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="contenedorPrincipal">
+                <div class="elementoCentrado">Estoy centrado</div>
+            </div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                 <code class="language-css">
+.elementoCentrado{
+    /*Propiedades necesarias para centrar el contenido*/
+    width: 70%;
+    margin: auto; /*El margin auto sirve para que margen se calcule dejando el mismo espacio a la izquierda que a la derecha*/
+}
+                 </code>
+             </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>Centrar elemento:</strong> Existen varias maneras de centrar elementos dentro
+            de su contenedor. En este ejemplo usaremos una convinación de margin y width. Tendremos un contenedor
+            principal al que le daremos un color para que sea más facil de visualizar el ejemplo. </div>
+
+    </div>
+    <!-- FIN Centrar un elemento dentro de un contenedor -->
+
+
+    <!-- Centrar un elemento dentro de un contenedor usando flex -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="contenedorPrincipalFlex">
+                <div class="elementoCentradoFlex">Estoy centrado</div>
+            </div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                     <code class="language-css">
+#contenedorPrincipalFlex{
+    /*Propiedades necesarias para centrar el contenido*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+                     </code>
+                 </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>Centrar elemento:</strong> Existen varias maneras de centrar elementos dentro
+            de su contenedor. En este ejemplo usaremos flex y justify-content. Fijaos que a diferencia del ejemplo
+            anterior esta vez es el contenedor el que decide como se visualizan los elementos. </div>
+
+    </div>
+    <!-- FIN Centrar un elemento dentro de un contenedor -->
+
+
+    <!-- Position relative and absolute -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="relativePositionItem">
+                <div class="absolutePositionElement">top:20px left:15px</div>
+            </div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                 <code class="language-css">
+#relativePositionItem {
+    position: relative;
+}
+
+.absolutePositionElement {
+
+    /*No se recomienda usar el position absolute en general a la hora de trabajar en posicionamiento. 
+    Si aún así se utiliza, porfavor que sea siempre como hijo de un position relative*/
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+                 </code>
+             </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>Position absolute:</strong> Sirve para posicionar elementos de manera
+            absoluta al primer progenitor que contenga la propiedad relative. Su uso está desaconsejado, pero en caso de
+            usarlo que el elemento absolute siempre esté dentro de un elemento relative </div>
+
+    </div>
+    <!-- Position relative and absolute -->
+
+    <!-- Posicionamiento usando grid -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="gridContainer">
+                <div class="gridElement">top:20px left:15px</div>
+            </div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                 <code class="language-css">
+#gridContainer {
+    display: grid;
+    /*Indicamos el ancho de las columnas que queremos crear en nuestro grid
+    si lo marcamos como auto el grid se ajustará para ocupar el espacio necesario dependiendo del contenido*/
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: auto auto;
+
+}
+
+.gridElement {
+
+    /*Ahora podemos tratar las celdas como si fuesen elementos normales, solo tenemos que indicar la posicion que ocupan en el grid*/
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+                    
+                 </code>
+             </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>Display grid:</strong> Nos permite gestionar el contenedor como si se tratase de un grid. Existen multitud de propiedades asociados al display grid. Revisar el link <a href="https://www.w3schools.com/css/css_grid.asp">W3Schools</a> si os interesa profundizar más.</div>
+
+    </div>
+    <!-- Position relative and absolute -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../prismLib/prism.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+#contenedorPrincipal {
+    width: 100%;
+    background-color: red;
+}
+
+.elementoCentrado {
+
+    /*Ignorar estas propiedades, son para mejorar la visualización del ejemplo*/
+    background-color: green;
+    color: white;
+    border: solid 1px black;
+    /*Propiedades necesarias para centrar el contenido*/
+    width: 70%;
+    margin: auto;
+    /*El margin auto sirve para que margen se calcule dejando el mismo espacio a la izquierda que a la derecha*/
+}
+
+#contenedorPrincipalFlex {
+    /*Ignorar estas propiedades, son para mejorar la visualización del ejemplo*/
+    background-color: red;
+    /*Propiedades necesarias para centrar el contenido*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.elementoCentradoFlex {
+
+    /*Ignorar estas propiedades, son para mejorar la visualización del ejemplo*/
+    background-color: green;
+    color: white;
+    border: solid 1px black;
+    width: 70%;
+}
+
+#gridContainer {
+    display: grid;
+    /*Indicamos el ancho de las columnas que queremos crear en nuestro grid
+    si lo marcamos como auto el grid se ajustará para ocupar el espacio necesario dependiendo del contenido*/
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: auto auto;
+
+    /*Ignorar estas propiedades, son para mejorar la visualización del ejemplo*/
+    width: 100%;
+    height: 150px;
+    background-color: red;
+}
+
+.gridElement {
+
+    /*Ahora podemos tratar las celdas como si fuesen elementos normales, solo tenemos que indicar la posicion que ocupan en el grid*/
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 20px;
+    margin-top: 15px;
+   
+
+    /*Ignorar estas propiedades, son para mejorar la visualización del ejemplo*/
+    background-color: green;
+    color: white;
+    
+}
+
