@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../prismLib/prism.css">
+    <link rel="stylesheet" href="propiedadesResponsive.css">
+</head>
+
+<body>
+
+    <div class="titulo">Ejemplos Resposive</div>
+
+
+    <div class="explicacionInicial">
+        <pre>
+            La palabra responsive es un concepto clave en css. Este apartado es una colección de gestión responsive de css. 
+
+            Responsive es un termino que se usa para hablar de la adaptavilidad de las páginas web a diferentes tamaños de pantalla. Ya sea modificando el contenido que se ve en la pantalla usando las sentencia @media o permitiendo que los elementos crezcan, reduzcan o reordenen en funcion del tamaño de pantalla.
+    
+            Os aconsejo visitar los siguientes link además de ver los ejemplos mostrados para entender en profundidad el concepto de responsive.
+    
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">display: flex</a>
+            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">display: grid</a>
+            <a href="https://www.w3schools.com/cssref/atrule_media.php">@media</a>
+        </pre>
+
+    </div>
+    <!-- Flex con wrap -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="contenedorFlexWrap">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+                <div class="itemFlex">5</div>
+                <div class="itemFlex">6</div>
+                <div class="itemFlex">7</div>
+            </div>
+
+            <div id="contenedorFlexWrapReverse">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+                <div class="itemFlex">5</div>
+                <div class="itemFlex">6</div>
+                <div class="itemFlex">7</div>
+            </div>
+
+            <div id="contenedorFlexWrapNone">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+                <div class="itemFlex">5</div>
+                <div class="itemFlex">6</div>
+                <div class="itemFlex">7</div>
+            </div>
+
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                <code class="language-css">
+    #contenedorFlexWrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #contenedorFlexWrapReverse {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    
+    #contenedorFlexWrapNone {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+                </code>
+            </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>flex wrap:</strong> Indica como el contenedor flex ha de reorganizar los elementos cuando estos no entran en el espacio disponible</div>
+
+    </div>
+
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="contenedorFlexDirectionColumn">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+                
+            </div>
+
+            <div id="contenedorFlexDirectionColumnreverse">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+                
+            </div>
+
+            <div id="contenedorFlexDirectionRow">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+                <div class="itemFlex">5</div>
+                <div class="itemFlex">6</div>
+                <div class="itemFlex">7</div>
+            </div>
+
+            <div id="contenedorFlexDirectionRowreverse">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+                <div class="itemFlex">5</div>
+                <div class="itemFlex">6</div>
+                <div class="itemFlex">7</div>
+            </div>
+
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                <code class="language-css">
+    #contenedorFlexWrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #contenedorFlexWrapReverse {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    
+    #contenedorFlexWrapNone {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+                </code>
+            </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>flex wrap:</strong> Indica como el contenedor flex ha de reorganizar los elementos cuando estos no entran en el espacio disponible</div>
+
+    </div>
+
+    <script src="../prismLib/prism.js"></script>
+</body>
+
+</html>
