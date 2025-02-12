@@ -1,0 +1,186 @@
+<!-- En este documento te encontrarás ejemplos de algunas de las propiedades más utilizadas en css -->
+<!-- A la hora de leer los ejemplos tendras un primer bloque donde podrás ver el codigo html del ejemplo, se encontrará rodeado de un comentario Ejemplo, 
+ y otro bloque usado para explicar rodeado del comentario Explicación -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../prismLib/prism.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+
+
+    <div class="titulo">Ejemplos básicos de grid usando Css</div>
+
+    <div class="explicacionInicial">
+        <pre>
+            Display grid esta cada vez obteniendo más relevancia en su uso sustituyendo a display flex en muchos aspectos del diseño de páginas web. Esto se debe a que es más fácil visualizar los espacios reservados por la página para cada sección sin desde el principio del desarrollo. 
+            Tambien es más facil gestionar diferentes tamaños de pantalla al poder simplemente ocultar una columna o fila por completo siendo el resultado final lo esperado.
+
+            Aunque normalmente hablamos de responsive cuando usamos flex, grid tambien es una propiedad responsive, por lo que su uso está más aconsejado que otros posicionamientos como position o float.
+    
+            Os aconsejo visitar los siguientes link además de ver los ejemplos mostrados para entender en profundidad el concepto de responsive.
+    
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">display: flex</a>
+            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">display: grid</a>
+            <a href="https://www.w3schools.com/cssref/atrule_media.php">@media</a>
+        </pre>
+
+    </div>
+
+    <!-- Crear un grid  -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="contenedorGrid">
+                <div class="elementoGrid ancho">1</div>
+                <div class="elementoGrid ancho">2</div>
+                <div class="elementoGrid ancho">3</div>
+                <div class="elementoGrid ancho">4</div>
+                <div class="elementoGrid ancho">5</div>
+                <div class="elementoGrid ancho">6</div>
+                <div class="elementoGrid ancho">7</div>
+                <div class="elementoGrid ancho">8</div>
+                <div class="elementoGrid ancho">9</div>
+            </div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                 <code class="language-css">
+    #contenedorGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+                 </code>
+             </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>display: grid:</strong> Nos permite tratar al contenedor como una matriz de
+            celdas, si le asignamos un template podemos añadir elementos sin preocuparnos por su posición. Los elementos
+            se iran añadiendo el los espacios disponibles en orden </div>
+
+    </div>
+    <!-- FIN Crear un grid  -->
+
+    <!-- Posicionar elementos internos un grid  -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="contenedorGridJustify">
+                <div class="elementoGrid estrecho">1</div>
+                <div class="elementoGrid estrecho">2</div>
+                <div class="elementoGrid estrecho">3</div>
+                <div class="elementoGrid estrecho">4</div>
+                <div class="elementoGrid estrecho">5</div>
+                <div class="elementoGrid estrecho">6</div>
+                <div class="elementoGrid estrecho">7</div>
+                <div class="elementoGrid estrecho">8</div>
+                <div class="elementoGrid estrecho">9</div>
+            </div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                 <code class="language-css">
+    #contenedorGridJustify{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+    }
+                 </code>
+             </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>Justify grid:</strong> Podemos usar la propiedad justify-items para
+            posicionar los elementos que se encuentran dentro de las casillas del grid. </div>
+
+    </div>
+    <!-- FIN Crear un grid  -->
+
+    <!-- Separación entre celdas del grid  -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="contenedorGridGap">
+                <div class="elementoGrid ancho">1</div>
+                <div class="elementoGrid ancho">2</div>
+                <div class="elementoGrid ancho">3</div>
+                <div class="elementoGrid ancho">4</div>
+                <div class="elementoGrid ancho">5</div>
+                <div class="elementoGrid ancho">6</div>
+                <div class="elementoGrid ancho">7</div>
+                <div class="elementoGrid ancho">8</div>
+                <div class="elementoGrid ancho">9</div>
+            </div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                 <code class="language-css">
+    #contenedorGridGap{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+                 </code>
+             </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>Grid gap:</strong> Indicamos el espacio que existe entre entre celdas </div>
+
+    </div>
+    <!-- FIN Separación entre celdas del grid  -->
+
+    <!-- Posicionamiento directo  -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="contenedorGrid">
+                <div class="elementoGrid ancho posAncho">Pos: 1, 2. 2 Cols ancho</div>
+                <div class="elementoGrid ancho pos">Pos: 2, 3</div>
+
+            </div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+             <code class="language-css">
+    #contenedorGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }    
+    .posAncho{
+        grid-column: 1 / span 2; /*Nos posicionamos en columna 1 con 2 columnas de ancho*/
+        grid-row: 2;
+    }
+    .pos{
+        grid-column: 2;
+        grid-row: 3;
+    }
+             </code>
+         </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>Grid position:</strong> Otra forma de organizar los elementos en un grid es posicionandolos a mano. Para ello indicamos el grid-colum y grid-row de los elementos. </div>
+
+    </div>
+    <!-- FIN Posicionamiento directo  -->
+
+
+
+
+
+
+
+    <script src="../prismLib/prism.js"></script>
+</body>
+
+</html>
