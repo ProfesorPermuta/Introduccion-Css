@@ -86,10 +86,12 @@
             </pre>
         </div>
 
-        <div class="tituloEjemplo"><strong>flex wrap:</strong> Indica como el contenedor flex ha de reorganizar los elementos cuando estos no entran en el espacio disponible</div>
+        <div class="tituloEjemplo"><strong>flex wrap:</strong> Indica como el contenedor flex ha de reorganizar los
+            elementos cuando estos no entran en el espacio disponible</div>
 
     </div>
 
+    <!-- Flex direction -->
     <div class="contenedorEjemplo">
 
         <div class="ejemplo">
@@ -98,7 +100,7 @@
                 <div class="itemFlex">2</div>
                 <div class="itemFlex">3</div>
                 <div class="itemFlex">4</div>
-                
+
             </div>
 
             <div id="contenedorFlexDirectionColumnreverse">
@@ -106,7 +108,7 @@
                 <div class="itemFlex">2</div>
                 <div class="itemFlex">3</div>
                 <div class="itemFlex">4</div>
-                
+
             </div>
 
             <div id="contenedorFlexDirectionRow">
@@ -133,28 +135,128 @@
         <div class="descripcion">
             <pre class="descPre">
                 <code class="language-css">
-    #contenedorFlexWrap {
+    #contenedorFlexDirectionColumn {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+
     }
     
-    #contenedorFlexWrapReverse {
+    #contenedorFlexDirectionColumnreverse {
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
     }
     
-    #contenedorFlexWrapNone {
+    #contenedorFlexDirectionRow {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+    
+    #contenedorFlexDirectionRowreverse {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
     }
                 </code>
             </pre>
         </div>
 
-        <div class="tituloEjemplo"><strong>flex wrap:</strong> Indica como el contenedor flex ha de reorganizar los elementos cuando estos no entran en el espacio disponible</div>
+        <div class="tituloEjemplo"><strong>flex direction:</strong> Permite indicar la dirección en la que los item se
+            van a posicionar. </div>
 
     </div>
 
+
+    <!-- Flex justify -->
+    <div class="contenedorEjemplo">
+
+        <div class="ejemplo">
+            <div id="contenedorFlexJustify">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+            </div>
+            <div id="contenedorFlexJustifyEnd">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+            </div>
+            <div id="contenedorFlexJustifyCenter">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+            </div>
+            <div id="contenedorFlexJustifyBetween">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+            </div>
+            <div id="contenedorFlexJustifyAround">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+            </div>
+            <div id="contenedorFlexJustifyEvenly">
+                <div class="itemFlex">1</div>
+                <div class="itemFlex">2</div>
+                <div class="itemFlex">3</div>
+                <div class="itemFlex">4</div>
+            </div>
+        </div>
+        <div class="descripcion">
+            <pre class="descPre">
+                <code class="language-css">
+    #contenedorFlexJustify{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    
+    #contenedorFlexJustifyEnd{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    
+    #contenedorFlexJustifyCenter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #contenedorFlexJustifyBetween{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #contenedorFlexJustifyAround{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #contenedorFlexJustifyEvenly{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+                </code>
+            </pre>
+        </div>
+
+        <div class="tituloEjemplo"><strong>justify-content:</strong> Indica como los elementos hijo del contenedor se deberían posicionar. El propio contenedor debe ser display flex o display grid para que esta propiedad tenga algun efecto </div>
+
+    </div>
     <script src="../prismLib/prism.js"></script>
 </body>
 

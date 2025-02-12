@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    
+
     border: 1px solid black;
     margin-top: 10px;
 
@@ -60,7 +60,65 @@
     margin-top: 10px;
 }
 
-.itemFlex{
+#contenedorFlexJustify {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+
+#contenedorFlexJustifyEnd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+
+#contenedorFlexJustifyCenter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+
+#contenedorFlexJustifyBetween {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+
+#contenedorFlexJustifyAround {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+
+#contenedorFlexJustifyEvenly {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.itemFlex {
     width: 50px;
     height: 50px;
     color: white;
@@ -68,7 +126,7 @@
     margin: 5px;
 }
 
-.ejemplo{
+.ejemplo {
     resize: both;
     overflow: auto;
 }
